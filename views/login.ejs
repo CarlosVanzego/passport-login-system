@@ -1,16 +1,16 @@
-<h1>Login</h1>>
+<h1>Login</h1>
 <% if (messages.error) { %>
-  <% messages.error %>
-  <% } %>
-<form action="/login" method="POST">
+  <%= messages.error %> <!-- Display error message if exists -->
+<% } %>
+<form action="/login" method="POST"> <!-- Login form -->
     <div>
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email" required> <!-- Email input field -->
      </div> 
      <div>
       <label for="password">Password</label>
-      <input type="Password" id="Password" name="Password" required>
+      <input type="password" id="password" name="password" required> <!-- Password input field -->
      </div>
-     <button type="submit">Login</button>
+     <button type="submit">Login</button> <!-- Login button -->
 </form>
-<a href="/register">Register</a>
+<a href="/register">Register</a> <!-- Link to register page -->
